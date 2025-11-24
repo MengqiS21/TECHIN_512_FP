@@ -10,6 +10,8 @@ The ESP32 board serves as the central controller. The OLED display and the ADXL3
 ## Enclosure Design
 The enclosure was designed to be clean, practical, and easy to open. The top cover is printed with transparent PLA so the NeoPixel can shine through the surface without requiring any special window or hole. This gives the device a polished appearance and avoids additional design complexity. The rotary encoder, its push switch, and the external button are mounted through the top panel using their original washers and nuts. I created circular openings that match the diameter of each component so they can be inserted from the front and tightened from the back. This approach keeps the components secure without glue or extra brackets and makes them easy to replace later if needed. To make the enclosure simple to open, I placed small magnets in the corners of both the lid and the base. These magnets allow the top cover to snap into place firmly while still being easy to remove. This makes it convenient to check the wiring, repair parts, or adjust the placement of sensors at any time. The overall design philosophy focuses on usability and maintainability, making sure the enclosure supports frequent testing while keeping the device visually clean.
 
+![Final Product]("C:\Users\WesPu\Desktop\512FPPic.jpg")
+
 ## Folder Structure
 ```
 src
