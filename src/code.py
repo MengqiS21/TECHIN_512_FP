@@ -31,14 +31,14 @@ line2 = label.Label(terminalio.FONT, text="", anchor_point=(0, 0),
                     anchored_position=(0, 16))
 line3 = label.Label(terminalio.FONT, text="", anchor_point=(0, 0),
                     anchored_position=(0, 32))
-# 新增：最底下一行专门显示 LIVES: ***
+# add LIVES: *** at the bootom of screen
 line_lives = label.Label(terminalio.FONT, text="", anchor_point=(0, 0),
                          anchored_position=(0, 48))
 
 main_group.append(line1)
 main_group.append(line2)
 main_group.append(line3)
-main_group.append(line_lives)  # 把 lives 行加进显示组
+main_group.append(line_lives) 
 display.root_group = main_group
 
 def show_text(l1="", l2="", l3=""):
@@ -46,7 +46,7 @@ def show_text(l1="", l2="", l3=""):
     line1.text = l1
     line2.text = l2
     line3.text = l3
-    # 菜单 / 开机画面不显示 LIVES
+    # open screen doesn't add LIVES
     line_lives.text = ""
 
 # --- Accelerometer ADXL345 (same I2C on D5/D4) ---
@@ -310,7 +310,7 @@ def show_game_text(l1="", l2=""):
     """
     line1.text = l1
     line2.text = l2
-    line3.text = ""           # 游戏时不再使用中间这行
+    line3.text = ""    # clear middle line
     line_lives.text = hearts_string()
 
 # =========================
