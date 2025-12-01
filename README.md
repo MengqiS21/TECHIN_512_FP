@@ -15,12 +15,18 @@ The enclosure was designed to be clean, practical, and easy to open. The top cov
 ## Folder Structure
 ```
 src
-code.py       CircuitPython scripts used for the game 
+code.py             CircuitPython scripts used for the game 
+directionCheck.py   Check the accelerator tilt LEFT / RIGHT now and watch dx/dy changes
+directionCheck2.py  Same as above
+encoderTest.py      Check the rotatory encoder direction (clockwise/counter clockwise)
+fullTest2.py        Test all elements after I hold them together
+
 
 documentation
-design     STL file for the enclosure  
+design             STL file for the enclosure  
 System diagram     System structure of this project
 Circuit diagram    Draw by KiCAD
+BoxWithCover       3D print model
 
 README.md  Project overview  
 ```
